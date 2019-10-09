@@ -82,7 +82,7 @@ int copy_process(int nr,long ebp,long edi,long esi,long gs,long none,
 		return -EAGAIN;
 	/*##SOMECHANGE##*/
 	memcpy(p,current,sizeof(struct task_struct));
-	/*p = *current;	/* NOTE! this doesn't copy the supervisor stack */
+	/*p = *current;*/	/* NOTE! this doesn't copy the supervisor stack */
 
 	p->state = TASK_RUNNING;
 	p->pid = last_pid;
