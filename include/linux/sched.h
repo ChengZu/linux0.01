@@ -227,6 +227,6 @@ __base;})
 #define get_limit(segment) ({ \
 unsigned long __limit; \
 __asm__("lsll %1,%0\n\tincl %0":"=r" (__limit):"r" (segment)); \
-__limit+1;})
+__limit;})
 
 #endif
