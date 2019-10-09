@@ -24,8 +24,6 @@ void verify_area(void * addr,int size)
 	size += start & 0xfff;
 	start &= 0xfffff000;
 	start +=get_base(current->ldt[2]);
-	/*##SOMECHANGE##*/
-	for(int i=0;i<100;i++){}
 	while (size>0) {
 		size -= 4096;	
 		write_verify(start);
