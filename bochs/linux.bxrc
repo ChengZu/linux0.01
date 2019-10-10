@@ -13,5 +13,5 @@ boot: a
 log: bochsout.txt
 
 
-#ata0-master: type=disk, path="hd1.img", mode=flat, cylinders=3072, heads=4, spt=20
+#ata0-master: type=disk, path="hda.img", mode=flat, cylinders=3072, heads=4, spt=20
 ata0-slave: type=disk, path="hdb.img", mode=flat, cylinders=3072, heads=4, spt=20
